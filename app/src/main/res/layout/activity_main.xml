@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText android:id="@+id/name"
+            android:text=""
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip" >
+        </EditText>
+
+        <TextView android:id="@+id/name_label"
+            android:text="@string/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/name"
+            android:layout_alignBaseline="@+id/name">
+        </TextView>
+
+        <EditText android:id="@+id/pwd"
+            android:text=""
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:layout_below="@id/name"
+            android:numeric="integer">
+        </EditText>
+
+        <TextView android:id="@+id/pwd_label"
+            android:text="@string/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toRightOf="@id/pwd"
+            android:layout_alignBaseline="@+id/pwd" >
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/RadioGroup01"
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RadioButton01"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/rb1">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/RadioButton02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb2">
+            </RadioButton>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/sexy_label"
+            android:text="@string/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+            <!--android:layout_alignBaseline="@+id/sexy"
+            android:layout_toRightOf="@id/sexy">-->
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/RadioGroup02"
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RadioButton03"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/rb3">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/RadioButton04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb4">
+            </RadioButton>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/isused_label"
+            android:text="@string/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/onInsert"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:onClick="onInsert"
+            android:text="@string/btn2" />
+
+        <Button
+            android:id="@+id/onUpdate"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:onClick="onUpdate"
+            android:text="@string/btn4" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/onQuery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn5"
+        android:onClick="onQuery"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/tv1"></TextView>
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:text=""></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/findById"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:onClick="findById"
+            android:text="@string/btn6" />
+
+        <Button
+            android:id="@+id/onDelete"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:onClick="onDelete"
+            android:text="@string/btn3" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/id_labe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/tv6">
+    </TextView>
+    <ScrollView  android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView android:id="@+id/display"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

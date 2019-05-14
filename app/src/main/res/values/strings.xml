@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MySQL数据库操作</string>
+    <string name="btn1">连接数据库</string>
+    <string name="btn2">添加该记录</string>
+    <string name="btn3">删除该记录</string>
+    <string name="btn4">修改该记录</string>
+    <string name="btn5">查询全部</string>
+    <string name="btn6">编号查询</string>
+
+    <string name="tv1">编号：</string>
+    <string name="tv2">姓名：</string>
+    <string name="tv3">密码：</string>
+    <string name="tv4">性别：</string>
+    <string name="tv5">是否有效：</string>
+    <string name="tv6">查询结果：</string>
+
+    <string name="rb1">男</string>
+    <string name="rb2">女</string>
+    <string name="rb3">是</string>
+    <string name="rb4">否</string>
+
+    <string name="et1">请输入编号：</string>
+    <string name="et2">请输入姓名：</string>
+    <string name="et3">请输入密码：</string>
+
+</resources>
